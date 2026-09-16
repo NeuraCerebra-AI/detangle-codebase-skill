@@ -14,9 +14,9 @@
   <text x="58" y="68" class="sans" fill="#f0f6fc" font-size="44" font-weight="750">Detangle Codebase</text>
   <text x="58" y="105" class="sans" fill="#c9d1d9" font-size="21">Review first. Clarify ownership. Change with care.</text>
 
-  <rect x="768" y="45" width="374" height="48" rx="12" fill="#13233a" stroke="#388bfd"/>
-  <circle cx="795" cy="69" r="6" fill="#58a6ff"/>
-  <text x="816" y="76" class="sans" fill="#b6daff" font-size="17" font-weight="600">Read-only first. Changes require approval.</text>
+  <rect x="692" y="45" width="450" height="48" rx="12" fill="#13233a" stroke="#388bfd"/>
+  <circle cx="719" cy="69" r="6" fill="#58a6ff"/>
+  <text x="740" y="76" class="sans" fill="#b6daff" font-size="17" font-weight="600">Read-only first. Changes require approval.</text>
 
   <path d="M58 132H1142" stroke="#30363d"/>
 
