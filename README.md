@@ -2,7 +2,7 @@
 
 <img src="assets/detangle-codebase-banner.svg" width="100%" alt="Detangle Codebase is a review-first architecture cleanup skill that maps a tangled app, names the real owner and canonical path, and requires approval before changes." />
 
-# Detangle Codebase: review-first architecture cleanup for tangled codebases
+# Detangle Codebase Skill: review-first architecture cleanup for tangled codebases
 
 ### Your app works. But can you safely change it?
 
