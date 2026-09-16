@@ -1,0 +1,4 @@
+interface:
+  display_name: "Architecture Transform Skill"
+  short_description: "Simplify and reorganize an entire repository"
+  default_prompt: "Use $architecture-transform in execute mode to investigate, select, and implement the best bounded architectural simplification for this repository."

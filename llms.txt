@@ -1,0 +1,31 @@
+# Architecture Transform Skill: repository architecture cleanup for tangled codebases
+
+> Architecture Transform Skill is a repository detangler: a repository-agnostic Codex and Claude Code skill for turning a tangled codebase into a clear, coherent architecture without changing intended behavior. It reviews a repository through evidence lanes, compares five architecture approaches and five implementation plans when five defensible choices exist, then selects an evidence-backed architecture approach and an adversarially tested implementation plan. If fewer defensible choices exist, it explains why rather than adding filler. It changes files only in explicit `execute` or `resume` mode, after a transformation contract and isolated Git state are in place. It is not a code formatter, a small bug-fix workflow, or an autonomous deployment system.
+
+It contains skill instructions, not an installed application or package. An ambiguous invocation is `review`, which is read-only. `execute` and `resume` allow only local work within the documented authority boundary.
+
+## Entry points
+
+- **Review without mutations:** [Start with review mode](README.md#start-with-review-mode) uses `review` to inspect a repository, generate five defensible architecture approaches and five defensible implementation plans when available, then select an architecture approach and freeze an implementation plan or explain the narrower choice set.
+- **Execute transformation:** [Execute an approved transformation](README.md#execute-an-approved-transformation) uses explicit `execute` to record the transformation contract and create isolated Git state before edits.
+- **Resume transformation:** [Resume an interrupted transformation](README.md#resume-an-interrupted-transformation) uses `resume` to revalidate the prior execution record before continuing.
+- **Read boundaries:** [Safety boundaries](README.md#safety-boundaries) states the local-only, root-only, and no-hidden-recovery limits.
+
+## Source instructions
+
+- **Skill definition:** [`SKILL.md`](SKILL.md) is the primary authority for modes, scope, delegation, decision-making, execution, stop conditions, and completion.
+- **Decision protocol:** [Strategic decision protocol](references/strategic-decision.md) defines the evidence dossier, architecture approaches, implementation plans, scoring, and adversarial falsification.
+- **Execution contract:** [Execution contract](references/execution-contract.md) defines run records, baseline checks, coherent slices, recovery posture, subtraction, and final review.
+- **Codex adapter:** [Codex host adapter](references/hosts/codex.md) maps the common workflow to Codex.
+- **Claude adapter:** [Claude Code host adapter](references/hosts/claude-code.md) maps the common workflow to Claude Code.
+
+## Key facts
+
+- **Project category:** repository detangler and architecture cleanup skill.
+- **Supported platforms:** Codex and Claude Code.
+- **Review result:** four evidence lanes, five architecture approaches and five implementation plans when defensible, plus a selected architecture approach and frozen implementation plan or an explanation of the narrower choice set.
+- **Execution requirements:** explicit mode, transformation contract, isolated Git state, root-only edits, safe local validation, obsolete-path removal after convergence, and local commits.
+- **Scope exclusions:** formatting-only work, small bug fixes, autonomous deployment, fetching, pushing, pull requests, merging, production or customer-data access, paid or live providers, and release claims.
+- **Installation status:** it doesn't document an installation command.
+- **License status:** no `LICENSE` file is present.
+- **Repository URL:** it doesn't specify one.

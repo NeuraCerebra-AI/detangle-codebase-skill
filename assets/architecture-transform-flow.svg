@@ -1,0 +1,134 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
+  <title id="title">Architecture Transform Skill review-to-execution story</title>
+  <desc id="desc">Four steps show a tangled repository entering read-only evidence review, qualified architecture and implementation choices, adversarial challenge with feedback, a frozen decision, and an explicit contract and isolated Git gate before root-only local execution creates a coherent architecture with one canonical path.</desc>
+  <style>
+    .sans { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; }
+    .mono { font-family: ui-monospace, &quot;SFMono-Regular&quot;, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; }
+    .journey { stroke-dasharray: 7 12; animation: journey 3s linear infinite; }
+    @keyframes journey { to { stroke-dashoffset: -38; } }
+    @media (prefers-reduced-motion: reduce) {
+      * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; }
+    }
+  </style>
+
+  <rect width="1200" height="860" rx="28" fill="#0d1117"/>
+  <rect x="1" y="1" width="1198" height="858" rx="27" fill="none" stroke="#30363d" stroke-width="2"/>
+  <text x="52" y="58" class="sans" fill="#f0f6fc" font-size="34" font-weight="700">Review first. Transform only through an explicit local gate.</text>
+  <text x="52" y="88" class="sans" fill="#8b949e" font-size="17">The same repository thread stays traceable from tangled evidence to one canonical path.</text>
+
+  <path d="M88 132V803" fill="none" stroke="#30363d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M88 132V803" class="journey" fill="none" stroke="#58a6ff" stroke-width="3" stroke-linecap="round"/>
+
+  <circle cx="88" cy="161" r="23" fill="#13233a" stroke="#1f6feb" stroke-width="2"/>
+  <text x="88" y="168" class="sans" text-anchor="middle" fill="#79c0ff" font-size="20" font-weight="700">1</text>
+  <rect x="132" y="116" width="1014" height="192" rx="18" fill="#111820" stroke="#30363d"/>
+  <text x="158" y="149" class="sans" fill="#f0f6fc" font-size="21" font-weight="700">Build evidence</text>
+  <text x="158" y="174" class="sans" fill="#8b949e" font-size="16">Review mode is read-only. The input stays visibly tangled until evidence gives it structure.</text>
+
+  <rect x="158" y="191" width="232" height="94" rx="14" fill="#161b22" stroke="#30363d"/>
+  <text x="177" y="216" class="mono" fill="#e3b341" font-size="13" letter-spacing="1">TANGLED INPUT</text>
+  <g fill="none" stroke-linecap="round" stroke-width="3">
+    <path d="M177 239C209 215 228 277 267 243S328 235 368 263" stroke="#58a6ff"/>
+    <path d="M178 266C219 283 236 216 285 246S325 278 369 231" stroke="#3fb950"/>
+    <path d="M180 226C222 251 209 279 258 270S321 217 368 251" stroke="#bc8cff"/>
+    <path d="M179 252C216 231 249 268 282 230S330 258 368 272" stroke="#e3b341"/>
+  </g>
+
+  <path d="M390 238H421" stroke="#58a6ff" stroke-width="3"/>
+  <path d="M413 231L423 238L413 245" fill="none" stroke="#58a6ff" stroke-width="3"/>
+  <text x="438" y="211" class="mono" fill="#79c0ff" font-size="13" letter-spacing="1">EXACTLY FOUR EVIDENCE LANES</text>
+  <g class="sans" font-size="16">
+    <rect x="438" y="218" width="314" height="40" rx="10" fill="#161b22" stroke="#1f6feb"/>
+    <rect x="438" y="218" width="7" height="40" rx="3.5" fill="#58a6ff"/>
+    <text x="460" y="244" fill="#c9d1d9">architecture</text>
+    <rect x="766" y="218" width="354" height="40" rx="10" fill="#161b22" stroke="#238636"/>
+    <rect x="766" y="218" width="7" height="40" rx="3.5" fill="#3fb950"/>
+    <text x="788" y="244" fill="#c9d1d9">domain and lifecycle custody</text>
+    <rect x="438" y="264" width="314" height="40" rx="10" fill="#161b22" stroke="#8957e5"/>
+    <rect x="438" y="264" width="7" height="40" rx="3.5" fill="#bc8cff"/>
+    <text x="460" y="290" fill="#c9d1d9">validation and operations</text>
+    <rect x="766" y="264" width="354" height="40" rx="10" fill="#161b22" stroke="#d29922"/>
+    <rect x="766" y="264" width="7" height="40" rx="3.5" fill="#e3b341"/>
+    <text x="788" y="290" fill="#c9d1d9">duplicate paths and organizational friction</text>
+  </g>
+
+  <circle cx="88" cy="365" r="23" fill="#13233a" stroke="#1f6feb" stroke-width="2"/>
+  <text x="88" y="372" class="sans" text-anchor="middle" fill="#79c0ff" font-size="20" font-weight="700">2</text>
+  <rect x="132" y="329" width="1014" height="222" rx="18" fill="#111820" stroke="#30363d"/>
+  <text x="158" y="362" class="sans" fill="#f0f6fc" font-size="21" font-weight="700">Compare options</text>
+  <text x="158" y="387" class="sans" fill="#8b949e" font-size="16">Compare five only when five defensible choices exist. If fewer survive, explain why instead of adding filler.</text>
+
+  <rect x="158" y="405" width="336" height="109" rx="14" fill="#13233a" stroke="#1f6feb"/>
+  <text x="178" y="432" class="sans" fill="#f0f6fc" font-size="17" font-weight="700">5 architecture approaches</text>
+  <text x="178" y="454" class="sans" fill="#79c0ff" font-size="16">when five are defensible</text>
+  <g class="mono" font-size="13" text-anchor="middle">
+    <rect x="178" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#58a6ff"/><text x="201.5" y="487" fill="#c9d1d9">A1</text>
+    <rect x="237" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#58a6ff"/><text x="260.5" y="487" fill="#c9d1d9">A2</text>
+    <rect x="296" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#58a6ff"/><text x="319.5" y="487" fill="#c9d1d9">A3</text>
+    <rect x="355" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#58a6ff"/><text x="378.5" y="487" fill="#c9d1d9">A4</text>
+    <rect x="414" y="468" width="47" height="28" rx="7" fill="#16283c" stroke="#79c0ff" stroke-width="2"/><text x="437.5" y="487" fill="#79c0ff">A5</text>
+  </g>
+
+  <path d="M494 459H519" stroke="#3fb950" stroke-width="3"/>
+  <path d="M511 452L521 459L511 466" fill="none" stroke="#3fb950" stroke-width="3"/>
+  <rect x="521" y="405" width="336" height="109" rx="14" fill="#10251a" stroke="#238636"/>
+  <text x="541" y="432" class="sans" fill="#f0f6fc" font-size="17" font-weight="700">5 implementation plans</text>
+  <text x="541" y="454" class="sans" fill="#7ee787" font-size="16">for the selected approach, when defensible</text>
+  <g class="mono" font-size="13" text-anchor="middle">
+    <rect x="541" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#3fb950"/><text x="564.5" y="487" fill="#c9d1d9">P1</text>
+    <rect x="600" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#3fb950"/><text x="623.5" y="487" fill="#c9d1d9">P2</text>
+    <rect x="659" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#3fb950"/><text x="682.5" y="487" fill="#c9d1d9">P3</text>
+    <rect x="718" y="468" width="47" height="28" rx="7" fill="#161b22" stroke="#3fb950"/><text x="741.5" y="487" fill="#c9d1d9">P4</text>
+    <rect x="777" y="468" width="47" height="28" rx="7" fill="#173322" stroke="#7ee787" stroke-width="2"/><text x="800.5" y="487" fill="#7ee787">P5</text>
+  </g>
+
+  <path d="M857 459H878" stroke="#bc8cff" stroke-width="3"/>
+  <path d="M870 452L880 459L870 466" fill="none" stroke="#bc8cff" stroke-width="3"/>
+  <rect x="880" y="405" width="240" height="109" rx="14" fill="#211637" stroke="#8957e5"/>
+  <text x="900" y="433" class="sans" fill="#f0f6fc" font-size="17" font-weight="700">Adversarial challenge</text>
+  <text x="900" y="458" class="sans" fill="#d2a8ff" font-size="16">Attack the leading plan</text>
+  <text x="900" y="482" class="sans" fill="#8b949e" font-size="15">assumptions • risks • deletion</text>
+  <path d="M1000 514V520H689V506" fill="none" stroke="#f85149" stroke-width="2" stroke-dasharray="6 7"/>
+  <path d="M682 514L689 503L696 514" fill="none" stroke="#f85149" stroke-width="2"/>
+  <text x="846" y="544" class="mono" text-anchor="middle" fill="#ff7b72" font-size="16">challenge finding: reject or revise</text>
+
+  <circle cx="88" cy="600" r="23" fill="#211637" stroke="#8957e5" stroke-width="2"/>
+  <text x="88" y="607" class="sans" text-anchor="middle" fill="#d2a8ff" font-size="20" font-weight="700">3</text>
+  <rect x="132" y="565" width="1014" height="129" rx="18" fill="#111820" stroke="#30363d"/>
+  <text x="158" y="598" class="sans" fill="#f0f6fc" font-size="21" font-weight="700">Freeze the plan</text>
+
+  <rect x="158" y="616" width="247" height="54" rx="12" fill="#13233a" stroke="#1f6feb"/>
+  <text x="281.5" y="638" class="sans" text-anchor="middle" fill="#79c0ff" font-size="16">selected architecture approach</text>
+  <text x="281.5" y="659" class="mono" text-anchor="middle" fill="#c9d1d9" font-size="13">frozen decision</text>
+  <rect x="421" y="616" width="224" height="54" rx="12" fill="#10251a" stroke="#238636"/>
+  <text x="533" y="638" class="sans" text-anchor="middle" fill="#7ee787" font-size="16">frozen implementation plan</text>
+  <text x="533" y="659" class="mono" text-anchor="middle" fill="#c9d1d9" font-size="13">slice order + validation</text>
+  <path d="M645 643H674" stroke="#e3b341" stroke-width="3"/>
+  <path d="M666 636L676 643L666 650" fill="none" stroke="#e3b341" stroke-width="3"/>
+  <rect x="676" y="604" width="444" height="78" rx="14" fill="#302109" stroke="#d29922" stroke-width="2"/>
+  <text x="698" y="630" class="sans" fill="#f0f6fc" font-size="17" font-weight="700">Execution gate</text>
+  <text x="698" y="653" class="sans" fill="#e3b341" font-size="16">explicit execute or resume  •  transformation contract</text>
+  <text x="698" y="674" class="sans" fill="#c9d1d9" font-size="16">isolated Git state  •  no edit before all three</text>
+
+  <circle cx="88" cy="749" r="23" fill="#10251a" stroke="#238636" stroke-width="2"/>
+  <text x="88" y="756" class="sans" text-anchor="middle" fill="#7ee787" font-size="20" font-weight="700">4</text>
+  <rect x="132" y="716" width="1014" height="105" rx="18" fill="#111820" stroke="#30363d"/>
+  <text x="158" y="749" class="sans" fill="#f0f6fc" font-size="21" font-weight="700">Execute carefully</text>
+  <rect x="158" y="766" width="244" height="36" rx="9" fill="#161b22" stroke="#30363d"/>
+  <text x="280" y="789" class="sans" text-anchor="middle" fill="#c9d1d9" font-size="16">root-only local slices</text>
+  <path d="M402 784H433" stroke="#3fb950" stroke-width="3"/>
+  <path d="M425 777L435 784L425 791" fill="none" stroke="#3fb950" stroke-width="3"/>
+  <rect x="435" y="766" width="260" height="36" rx="9" fill="#161b22" stroke="#30363d"/>
+  <text x="565" y="789" class="sans" text-anchor="middle" fill="#c9d1d9" font-size="16">validate, then remove old paths</text>
+  <path d="M695 784H726" stroke="#3fb950" stroke-width="3"/>
+  <path d="M718 777L728 784L718 791" fill="none" stroke="#3fb950" stroke-width="3"/>
+  <rect x="728" y="741" width="392" height="66" rx="14" fill="#10251a" stroke="#238636" stroke-width="2"/>
+  <rect x="750" y="759" width="108" height="30" rx="8" fill="#173322" stroke="#3fb950"/>
+  <text x="804" y="779" class="sans" text-anchor="middle" fill="#7ee787" font-size="15" font-weight="700">clear owner</text>
+  <path d="M858 774H885" stroke="#3fb950" stroke-width="3"/>
+  <rect x="885" y="752" width="213" height="43" rx="9" fill="#13233a" stroke="#1f6feb"/>
+  <text x="991.5" y="770" class="sans" text-anchor="middle" fill="#f0f6fc" font-size="16" font-weight="700">coherent architecture</text>
+  <text x="991.5" y="789" class="mono" text-anchor="middle" fill="#79c0ff" font-size="12">one canonical path</text>
+
+  <text x="132" y="844" class="sans" fill="#8b949e" font-size="16">Local repository authority only. No fetch, push, merge, pull request, deployment, production access, or release claim.</text>
+</svg>
