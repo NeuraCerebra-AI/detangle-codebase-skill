@@ -1,15 +1,17 @@
-# Architecture Transform Skill: repository architecture cleanup for tangled codebases
+# Detangle: review-first architecture cleanup for tangled codebases
 
-> Architecture Transform Skill is a repository detangler: a repository-agnostic Codex and Claude Code skill for turning a tangled codebase into a clear, coherent architecture without changing intended behavior. It reviews a repository through evidence lanes, compares five architecture approaches and five implementation plans when five defensible choices exist, then selects an evidence-backed architecture approach and an adversarially tested implementation plan. If fewer defensible choices exist, it explains why rather than adding filler. It changes files only in explicit `execute` or `resume` mode, after a transformation contract and isolated Git state are in place. It is not a code formatter, a small bug-fix workflow, or an autonomous deployment system.
+> Detangle is a repository-agnostic Codex and Claude Code skill for making a tangled codebase easier to understand, debug, change, and navigate without changing intended behavior. It reviews the whole repository before proposing a selected architecture approach and frozen implementation plan, then changes files only after explicit `execute` or `resume` authorization, a transformation contract, and isolated Git state. It is not a formatter, an automatic code repair tool, a normal small bug-fix workflow, a deployment system, or a replacement for tests and code review.
 
-It contains skill instructions, not an installed application or package. An ambiguous invocation is `review`, which is read-only. `execute` and `resume` allow only local work within the documented authority boundary.
+Use `$architecture-transform review` for read-only analysis. The public name is Detangle, but the actual Codex invocation remains `$architecture-transform`. An ambiguous invocation is `review`. Only explicit `execute` or `resume` permits local changes within the documented authority boundary.
 
 ## Entry points
 
-- **Review without mutations:** [Start with review mode](README.md#start-with-review-mode) uses `review` to inspect a repository, generate five defensible architecture approaches and five defensible implementation plans when available, then select an architecture approach and freeze an implementation plan or explain the narrower choice set.
-- **Execute transformation:** [Execute an approved transformation](README.md#execute-an-approved-transformation) uses explicit `execute` to record the transformation contract and create isolated Git state before edits.
-- **Resume transformation:** [Resume an interrupted transformation](README.md#resume-an-interrupted-transformation) uses `resume` to revalidate the prior execution record before continuing.
-- **Read boundaries:** [Safety boundaries](README.md#safety-boundaries) states the local-only, root-only, and no-hidden-recovery limits.
+- **Review without mutations:** [How Detangle works](README.md#-how-detangle-works) explains the read-only review, frozen decision, and explicit execution boundary.
+- **See an example request:** [Example request](README.md#-example-request) shows a realistic `$architecture-transform review` request and labels it as an example, not captured output.
+- **Choose a mode:** [Choose a mode](README.md#-choose-a-mode) distinguishes `review`, `execute`, and `resume`.
+- **Read boundaries:** [Safety boundaries](README.md#-safety-boundaries) states the local-only, root-only, and no-hidden-recovery limits.
+- **Understand the decision:** [The decision process in detail](README.md#-the-decision-process-in-detail) explains the four evidence lanes and five-by-five rule.
+- **Understand execution:** [How execution converges](README.md#-how-execution-converges) explains the contract, isolation, canonical ownership, validation, and subtraction rules.
 
 ## Source instructions
 
@@ -21,11 +23,14 @@ It contains skill instructions, not an installed application or package. An ambi
 
 ## Key facts
 
-- **Project category:** repository detangler and architecture cleanup skill.
-- **Supported platforms:** Codex and Claude Code.
-- **Review result:** four evidence lanes, five architecture approaches and five implementation plans when defensible, plus a selected architecture approach and frozen implementation plan or an explanation of the narrower choice set.
-- **Execution requirements:** explicit mode, transformation contract, isolated Git state, root-only edits, safe local validation, obsolete-path removal after convergence, and local commits.
-- **Scope exclusions:** formatting-only work, small bug fixes, autonomous deployment, fetching, pushing, pull requests, merging, production or customer-data access, paid or live providers, and release claims.
-- **Installation status:** it doesn't document an installation command.
+- **Project category:** review-first repository architecture cleanup skill.
+- **Public name:** Detangle.
+- **Actual Codex invocation:** `$architecture-transform`.
+- **Supported hosts:** Codex and Claude Code.
+- **Review evidence:** exactly four lanes covering architecture; domain and lifecycle custody; validation and operations; duplicate paths and organizational friction.
+- **Decision rule:** five architecture approaches followed by five implementation plans when five defensible choices exist; otherwise every defensible choice plus an explanation of the smaller set.
+- **Execution requirements:** explicit `execute` or `resume`, a transformation contract, isolated Git state, root-only edits, safe local validation, convergence, and obsolete-path removal.
+- **Scope exclusions:** formatting-only work, normal small bug fixes, automatic code repair, deployment, fetch, push, pull requests, merge, production or customer-data access, paid or live providers, and release claims.
+- **Installation status:** no installation command is documented.
 - **License status:** no `LICENSE` file is present.
-- **Repository URL:** it doesn't specify one.
+- **Repository URL:** no repository URL is specified.

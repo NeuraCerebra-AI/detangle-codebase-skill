@@ -1,100 +1,71 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 520" role="img" aria-labelledby="title desc">
-  <title id="title">Architecture Transform Skill turns a tangled repository into a coherent architecture</title>
-  <desc id="desc">A visibly tangled repository enters a read-only review with four evidence lanes. A contract and isolated Git gate requires explicit execute or resume authorization before root-only local work produces clear ownership and one canonical path.</desc>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
+  <title id="title">Detangle turns a tangled app into a codebase with clear ownership</title>
+  <desc id="desc">A dark three-part diagram shows crossing paths in a tangled app, a calm read-only review that finds the real path, names the owner, and plans safely, then a clear codebase with one owner and one canonical path.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; }
-    .mono { font-family: ui-monospace, &quot;SFMono-Regular&quot;, Consolas, &quot;Liberation Mono&quot;, Menlo, monospace; }
-    .signal { stroke-dasharray: 7 13; animation: signal 2.8s linear infinite; }
-    @keyframes signal { to { stroke-dashoffset: -40; } }
-    @media (prefers-reduced-motion: reduce) {
-      * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; }
-    }
+    .flow { stroke-dasharray: 8 12; animation: move 1.8s linear infinite; }
+    @keyframes move { to { stroke-dashoffset: -40; } }
+    @media (prefers-reduced-motion: reduce) { * { animation-duration: 0.01ms !important; animation-iteration-count: 1 !important; animation-delay: 0s !important; } }
   </style>
 
-  <rect width="1200" height="520" rx="28" fill="#0d1117"/>
-  <rect x="1" y="1" width="1198" height="518" rx="27" fill="none" stroke="#30363d" stroke-width="2"/>
-  <path d="M38 186H1162M38 466H1162" stroke="#30363d" opacity="0.55"/>
+  <rect width="1200" height="460" rx="28" fill="#0d1117"/>
+  <rect x="1" y="1" width="1198" height="458" rx="27" fill="none" stroke="#30363d" stroke-width="2"/>
 
-  <text x="54" y="64" class="sans" fill="#f0f6fc" font-size="42" font-weight="700">Architecture Transform Skill</text>
-  <text x="56" y="101" class="sans" fill="#c9d1d9" font-size="20">Turn a tangled repository into a clear, coherent architecture without changing intended behavior.</text>
+  <text x="58" y="68" class="sans" fill="#f0f6fc" font-size="44" font-weight="750">Detangle</text>
+  <text x="58" y="105" class="sans" fill="#c9d1d9" font-size="21">Review first. Clarify ownership. Change with care.</text>
 
-  <rect x="54" y="124" width="432" height="42" rx="10" fill="#161b22" stroke="#30363d"/>
-  <circle cx="78" cy="145" r="5" fill="#3fb950"/>
-  <text x="96" y="151" class="mono" fill="#f0f6fc" font-size="17">$architecture-transform review</text>
-  <rect x="504" y="124" width="642" height="42" rx="10" fill="#13233a" stroke="#1f6feb"/>
-  <text x="825" y="151" class="sans" text-anchor="middle" fill="#79c0ff" font-size="16">Review is read-only. Execute or resume requires a contract and isolated Git state.</text>
+  <rect x="768" y="45" width="374" height="48" rx="12" fill="#13233a" stroke="#388bfd"/>
+  <circle cx="795" cy="69" r="6" fill="#58a6ff"/>
+  <text x="816" y="76" class="sans" fill="#b6daff" font-size="17" font-weight="600">Read-only first. Changes require approval.</text>
 
-  <rect x="54" y="204" width="276" height="242" rx="18" fill="#161b22" stroke="#30363d" stroke-width="2"/>
-  <text x="76" y="232" class="mono" fill="#e3b341" font-size="13" font-weight="700" letter-spacing="1.5">BEFORE</text>
-  <text x="76" y="259" class="sans" fill="#f0f6fc" font-size="20" font-weight="700">Tangled repository</text>
+  <path d="M58 132H1142" stroke="#30363d"/>
 
-  <g fill="none" stroke-linecap="round" stroke-width="4">
-    <path d="M82 290C125 266 147 340 191 306S266 285 299 326C319 351 250 363 214 339S143 312 91 375" stroke="#58a6ff"/>
-    <path d="M84 331C118 373 159 272 206 293S237 377 302 365" stroke="#3fb950"/>
-    <path d="M91 279C142 318 114 385 173 370S224 270 295 297" stroke="#bc8cff"/>
-    <path d="M84 358C135 327 174 352 201 322S246 310 303 280" stroke="#e3b341"/>
-    <path d="M105 301C146 289 161 344 223 350S267 324 296 343" stroke="#8b949e"/>
+  <rect x="58" y="164" width="300" height="238" rx="20" fill="#161b22" stroke="#3d444d" stroke-width="2"/>
+  <text x="84" y="199" class="sans" fill="#f0f6fc" font-size="21" font-weight="700">Tangled app</text>
+
+  <g fill="none" stroke-linecap="round" stroke-width="6">
+    <path d="M92 275C135 231 181 351 232 281S301 251 328 302" stroke="#58a6ff"/>
+    <path d="M91 328C135 367 180 246 230 319S292 359 330 276" stroke="#3fb950"/>
+    <path d="M93 249C157 278 136 364 204 346S260 236 328 257" stroke="#bc8cff"/>
+    <path d="M91 352C151 317 193 335 226 290S282 298 329 238" stroke="#e3b341"/>
   </g>
-  <g fill="#0d1117" stroke-width="3">
-    <circle cx="91" cy="290" r="7" stroke="#58a6ff"/>
-    <circle cx="142" cy="328" r="7" stroke="#bc8cff"/>
-    <circle cx="203" cy="307" r="7" stroke="#3fb950"/>
-    <circle cx="248" cy="350" r="7" stroke="#e3b341"/>
-    <circle cx="298" cy="297" r="7" stroke="#58a6ff"/>
-  </g>
-  <text x="76" y="406" class="sans" fill="#8b949e" font-size="13">competing owners  •  duplicate paths</text>
-  <text x="76" y="427" class="sans" fill="#8b949e" font-size="13">scattered machinery  •  blurred boundaries</text>
-
-  <path d="M330 325H358" stroke="#58a6ff" stroke-width="3"/>
-  <path d="M350 318L360 325L350 332" fill="none" stroke="#58a6ff" stroke-width="3"/>
-
-  <rect x="360" y="204" width="398" height="242" rx="18" fill="#111b29" stroke="#1f6feb" stroke-width="2"/>
-  <text x="382" y="232" class="mono" fill="#79c0ff" font-size="13" font-weight="700" letter-spacing="1.5">READ-ONLY REVIEW</text>
-  <text x="382" y="259" class="sans" fill="#f0f6fc" font-size="20" font-weight="700">Four evidence lanes</text>
-
-  <g class="sans" font-size="16">
-    <rect x="382" y="276" width="354" height="31" rx="8" fill="#161b22" stroke="#1f6feb"/>
-    <rect x="382" y="276" width="7" height="31" rx="3.5" fill="#58a6ff"/>
-    <text x="405" y="297" fill="#c9d1d9">architecture</text>
-    <rect x="382" y="315" width="354" height="31" rx="8" fill="#161b22" stroke="#238636"/>
-    <rect x="382" y="315" width="7" height="31" rx="3.5" fill="#3fb950"/>
-    <text x="405" y="336" fill="#c9d1d9">domain and lifecycle custody</text>
-    <rect x="382" y="354" width="354" height="31" rx="8" fill="#161b22" stroke="#8957e5"/>
-    <rect x="382" y="354" width="7" height="31" rx="3.5" fill="#bc8cff"/>
-    <text x="405" y="375" fill="#c9d1d9">validation and operations</text>
-    <rect x="382" y="393" width="354" height="31" rx="8" fill="#161b22" stroke="#d29922"/>
-    <rect x="382" y="393" width="7" height="31" rx="3.5" fill="#e3b341"/>
-    <text x="405" y="414" fill="#c9d1d9">duplicate paths and organizational friction</text>
+  <g fill="#0d1117" stroke-width="4">
+    <circle cx="93" cy="249" r="9" stroke="#bc8cff"/>
+    <circle cx="143" cy="323" r="9" stroke="#58a6ff"/>
+    <circle cx="211" cy="320" r="9" stroke="#3fb950"/>
+    <circle cx="267" cy="300" r="9" stroke="#e3b341"/>
+    <circle cx="328" cy="257" r="9" stroke="#bc8cff"/>
   </g>
 
-  <path d="M758 325H779" stroke="#8b949e" stroke-width="3"/>
-  <path d="M771 318L781 325L771 332" fill="none" stroke="#8b949e" stroke-width="3"/>
-  <rect x="781" y="250" width="144" height="150" rx="16" fill="#302109" stroke="#d29922" stroke-width="2"/>
-  <text x="853" y="278" class="mono" text-anchor="middle" fill="#e3b341" font-size="13" font-weight="700" letter-spacing="1">AUTHORITY GATE</text>
-  <text x="853" y="306" class="sans" text-anchor="middle" fill="#f0f6fc" font-size="16" font-weight="700">selected approach</text>
-  <text x="853" y="328" class="sans" text-anchor="middle" fill="#f0f6fc" font-size="16" font-weight="700">frozen plan</text>
-  <path d="M805 343H901" stroke="#d29922" opacity="0.6"/>
-  <text x="853" y="366" class="mono" text-anchor="middle" fill="#e3b341" font-size="13">contract + isolated Git</text>
-  <text x="853" y="387" class="mono" text-anchor="middle" fill="#c9d1d9" font-size="13">explicit execute / resume</text>
+  <path d="M374 282H418" stroke="#58a6ff" stroke-width="4"/>
+  <path d="M405 271L420 282L405 293" fill="none" stroke="#58a6ff" stroke-width="4"/>
+  <path d="M374 282H418" class="flow" stroke="#b6daff" stroke-width="3"/>
 
-  <path d="M925 325H946" stroke="#3fb950" stroke-width="3"/>
-  <path d="M938 318L948 325L938 332" fill="none" stroke="#3fb950" stroke-width="3"/>
+  <rect x="420" y="164" width="360" height="238" rx="20" fill="#111b29" stroke="#388bfd" stroke-width="2"/>
+  <text x="446" y="199" class="sans" fill="#f0f6fc" font-size="21" font-weight="700">Review first</text>
 
-  <rect x="948" y="204" width="198" height="242" rx="18" fill="#10251a" stroke="#238636" stroke-width="2"/>
-  <text x="970" y="232" class="mono" fill="#7ee787" font-size="13" font-weight="700" letter-spacing="1.5">AFTER</text>
-  <text x="970" y="259" class="sans" fill="#f0f6fc" font-size="20" font-weight="700">Coherent architecture</text>
-  <rect x="994" y="281" width="106" height="36" rx="9" fill="#161b22" stroke="#3fb950"/>
-  <text x="1047" y="304" class="sans" text-anchor="middle" fill="#7ee787" font-size="16" font-weight="700">clear owner</text>
-  <path d="M1047 317V348M1047 332H986M1047 332H1108" fill="none" stroke="#3fb950" stroke-width="3"/>
-  <rect x="968" y="348" width="74" height="38" rx="8" fill="#161b22" stroke="#58a6ff"/>
-  <rect x="1052" y="348" width="74" height="38" rx="8" fill="#161b22" stroke="#bc8cff"/>
-  <text x="1005" y="372" class="sans" text-anchor="middle" fill="#c9d1d9" font-size="13">boundary</text>
-  <text x="1089" y="372" class="sans" text-anchor="middle" fill="#c9d1d9" font-size="13">lifecycle</text>
-  <path d="M1047 386V403" stroke="#3fb950" stroke-width="3"/>
-  <rect x="985" y="403" width="124" height="27" rx="8" fill="#13233a" stroke="#1f6feb"/>
-  <text x="1047" y="421" class="mono" text-anchor="middle" fill="#79c0ff" font-size="12">one canonical path</text>
+  <rect x="446" y="236" width="308" height="44" rx="10" fill="#161b22" stroke="#388bfd"/>
+  <circle cx="469" cy="258" r="6" fill="#58a6ff"/>
+  <text x="490" y="265" class="sans" fill="#dbeafe" font-size="17">Find real path</text>
+  <rect x="446" y="294" width="308" height="44" rx="10" fill="#161b22" stroke="#2ea043"/>
+  <circle cx="469" cy="316" r="6" fill="#3fb950"/>
+  <text x="490" y="323" class="sans" fill="#d7f8df" font-size="17">Name owner</text>
+  <rect x="446" y="352" width="308" height="44" rx="10" fill="#161b22" stroke="#d29922"/>
+  <circle cx="469" cy="374" r="6" fill="#e3b341"/>
+  <text x="490" y="381" class="sans" fill="#f8e3ad" font-size="17">Plan safely</text>
 
-  <path d="M330 325H360M758 325H781M925 325H948M1047 317V403" class="signal" fill="none" stroke="#79c0ff" stroke-width="2" opacity="0.9"/>
+  <path d="M796 282H840" stroke="#3fb950" stroke-width="4"/>
+  <path d="M827 271L842 282L827 293" fill="none" stroke="#3fb950" stroke-width="4"/>
+  <path d="M796 282H840" class="flow" stroke="#7ee787" stroke-width="3"/>
 
-  <text x="54" y="494" class="sans" fill="#8b949e" font-size="16">Root-only local changes. No deployment or external authority.</text>
+  <rect x="842" y="164" width="300" height="238" rx="20" fill="#10251a" stroke="#2ea043" stroke-width="2"/>
+  <text x="868" y="199" class="sans" fill="#f0f6fc" font-size="21" font-weight="700">Clear codebase</text>
+
+  <rect x="930" y="238" width="124" height="46" rx="11" fill="#16351f" stroke="#3fb950" stroke-width="2"/>
+  <text x="992" y="267" class="sans" text-anchor="middle" fill="#a7f3b7" font-size="17" font-weight="700">One owner</text>
+  <path d="M992 284V326" stroke="#3fb950" stroke-width="4"/>
+  <circle cx="992" cy="326" r="6" fill="#3fb950"/>
+  <path d="M992 326V347" stroke="#3fb950" stroke-width="4"/>
+  <rect x="897" y="347" width="190" height="44" rx="11" fill="#13233a" stroke="#388bfd" stroke-width="2"/>
+  <text x="992" y="375" class="sans" text-anchor="middle" fill="#b6daff" font-size="17" font-weight="650">Canonical path</text>
 </svg>

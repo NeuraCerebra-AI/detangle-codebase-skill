@@ -1,4 +1,4 @@
 interface:
-  display_name: "Architecture Transform Skill"
-  short_description: "Simplify and reorganize an entire repository"
-  default_prompt: "Use $architecture-transform in execute mode to investigate, select, and implement the best bounded architectural simplification for this repository."
+  display_name: "Detangle Skill"
+  short_description: "Review and simplify tangled repository architecture"
+  default_prompt: "Use $architecture-transform in execute mode to review this repository, select a bounded architecture cleanup plan, and implement it within the skill's safety boundaries."
