@@ -1,13 +1,13 @@
-# Detangle: review-first architecture cleanup for tangled codebases
+# Detangle Codebase: review-first architecture cleanup for tangled codebases
 
-> Detangle is a repository-agnostic Codex and Claude Code skill for making a tangled codebase easier to understand, debug, change, and navigate without changing intended behavior. It reviews the whole repository before proposing a selected architecture approach and frozen implementation plan, then changes files only after explicit `execute` or `resume` authorization, a transformation contract, and isolated Git state. It is not a formatter, an automatic code repair tool, a normal small bug-fix workflow, a deployment system, or a replacement for tests and code review.
+> Detangle Codebase is a repository-agnostic Codex and Claude Code skill for making a tangled codebase easier to understand, debug, change, and navigate without changing intended behavior. It reviews the whole repository before proposing a selected architecture approach and frozen implementation plan, then changes files only after explicit `execute` or `resume` authorization, a transformation contract, and isolated Git state. It is not a formatter, an automatic code repair tool, a normal small bug-fix workflow, a deployment system, or a replacement for tests and code review.
 
-Use `$architecture-transform review` for read-only analysis. The public name is Detangle, but the actual Codex invocation remains `$architecture-transform`. An ambiguous invocation is `review`. Only explicit `execute` or `resume` permits local changes within the documented authority boundary.
+Use `$detangle review` for read-only analysis. Detangle Codebase is invoked as `$detangle` in Codex or `/detangle` in Claude Code. An ambiguous invocation is `review`. Only explicit `execute` or `resume` permits local changes within the documented authority boundary.
 
 ## Entry points
 
-- **Review without mutations:** [How Detangle works](README.md#-how-detangle-works) explains the read-only review, frozen decision, and explicit execution boundary.
-- **See an example request:** [Example request](README.md#-example-request) shows a realistic `$architecture-transform review` request and labels it as an example, not captured output.
+- **Review without mutations:** [How Detangle Codebase works](README.md#-how-detangle-codebase-works) explains the read-only review, frozen decision, and explicit execution boundary.
+- **See an example request:** [Example request](README.md#-example-request) shows a realistic `$detangle review` request and labels it as an example, not captured output.
 - **Choose a mode:** [Choose a mode](README.md#-choose-a-mode) distinguishes `review`, `execute`, and `resume`.
 - **Read boundaries:** [Safety boundaries](README.md#-safety-boundaries) states the local-only, root-only, and no-hidden-recovery limits.
 - **Understand the decision:** [The decision process in detail](README.md#-the-decision-process-in-detail) explains the four evidence lanes and five-by-five rule.
@@ -24,13 +24,13 @@ Use `$architecture-transform review` for read-only analysis. The public name is 
 ## Key facts
 
 - **Project category:** review-first repository architecture cleanup skill.
-- **Public name:** Detangle.
-- **Actual Codex invocation:** `$architecture-transform`.
+- **Skill name:** Detangle Codebase.
+- **Codex invocation:** `$detangle`.
 - **Supported hosts:** Codex and Claude Code.
 - **Review evidence:** exactly four lanes covering architecture; domain and lifecycle custody; validation and operations; duplicate paths and organizational friction.
 - **Decision rule:** five architecture approaches followed by five implementation plans when five defensible choices exist; otherwise every defensible choice plus an explanation of the smaller set.
 - **Execution requirements:** explicit `execute` or `resume`, a transformation contract, isolated Git state, root-only edits, safe local validation, convergence, and obsolete-path removal.
 - **Scope exclusions:** formatting-only work, normal small bug fixes, automatic code repair, deployment, fetch, push, pull requests, merge, production or customer-data access, paid or live providers, and release claims.
-- **Installation status:** no installation command is documented.
+- **Installation convention:** install the skill directory as `detangle`.
 - **License status:** no `LICENSE` file is present.
-- **Repository URL:** no repository URL is specified.
+- **Repository URL:** https://github.com/NeuraCerebra-AI/detangle-codebase-skill

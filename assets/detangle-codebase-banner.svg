@@ -1,6 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" role="img" aria-labelledby="title desc">
-  <title id="title">Detangle turns a tangled app into a codebase with clear ownership</title>
-  <desc id="desc">A dark three-part diagram shows crossing paths in a tangled app, a calm read-only review that finds the real path, names the owner, and plans safely, then a clear codebase with one owner and one canonical path.</desc>
+  <title id="title">Detangle Codebase turns a tangled app into a codebase with clear ownership</title>
+  <desc id="desc">A dark three-part diagram shows Detangle Codebase reviewing crossing paths in a tangled app, finding the real path, naming the owner, and planning safely before producing a clear codebase with one owner and one canonical path.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; }
     .flow { stroke-dasharray: 8 12; animation: move 1.8s linear infinite; }
@@ -11,7 +11,7 @@
   <rect width="1200" height="460" rx="28" fill="#0d1117"/>
   <rect x="1" y="1" width="1198" height="458" rx="27" fill="none" stroke="#30363d" stroke-width="2"/>
 
-  <text x="58" y="68" class="sans" fill="#f0f6fc" font-size="44" font-weight="750">Detangle</text>
+  <text x="58" y="68" class="sans" fill="#f0f6fc" font-size="44" font-weight="750">Detangle Codebase</text>
   <text x="58" y="105" class="sans" fill="#c9d1d9" font-size="21">Review first. Clarify ownership. Change with care.</text>
 
   <rect x="768" y="45" width="374" height="48" rx="12" fill="#13233a" stroke="#388bfd"/>

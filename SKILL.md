@@ -1,9 +1,9 @@
 ---
-name: architecture-transform
-description: Analyze and, when explicitly authorized, execute a repository-wide architectural cleanup that reduces bloat, clarifies ownership, removes obsolete paths, and reorganizes code without changing intended behavior. Use for whole-repository simplification or rearchitecture, not ordinary bug fixes or small feature work.
+name: detangle
+description: Review and, when explicitly authorized, reorganize a tangled codebase into a clear, coherent architecture without changing intended behavior. Use when a user invokes Detangle or asks to untangle a whole repository, not for ordinary bug fixes or small feature work.
 ---
 
-# Architecture Transform
+# Detangle Codebase
 
 Find and implement the smallest coherent architecture that satisfies the repository's purpose. Optimize for clear ownership, one canonical path, low accidental complexity, completed lifecycles, and ease of change. Do not optimize for fewer lines, more files, fashionable patterns, or abstraction by itself.
 
@@ -26,7 +26,7 @@ Supported modes:
 - `execute`: create isolated Git state, perform the full decision process, implement the winning plan, validate it, update required documentation, and make local commits.
 - `resume`: continue a previously recorded execution after revalidating its identity and state.
 
-Treat an ambiguous invocation as `review`. Only an explicit `execute` or `resume` authorizes mutations. Invocation examples are `$architecture-transform execute ...` in Codex and `/architecture-transform execute ...` in Claude Code.
+Treat an ambiguous invocation as `review`. Only an explicit `execute` or `resume` authorizes mutations. Invoke Detangle Codebase as `$detangle execute ...` in Codex or `/detangle execute ...` in Claude Code.
 
 `execute` authorizes only local branch/worktree creation, repository edits, local validation, required local documentation, and local commits. It does not authorize fetching or pulling, pushing, opening a pull request, merging, deploying, calling paid or live providers, accessing production or customer data, changing external systems, or claiming release readiness.
 
@@ -50,7 +50,7 @@ Default to the current committed `HEAD` only when doing so is unambiguous. For a
 
 ## Isolate execution
 
-For `execute`, create a new isolated worktree by default. Reuse the current worktree only when explicit host metadata or the user identifies it as an isolated disposable worktree for this run. Respect repository and host branch policy; otherwise use `architecture-transform-<short-slug>-<date>` with a unique suffix when needed.
+For `execute`, create a new isolated worktree by default. Reuse the current worktree only when explicit host metadata or the user identifies it as an isolated disposable worktree for this run. Respect repository and host branch policy; otherwise use `detangle-<short-slug>-<date>` with a unique suffix when needed.
 
 Before creating Git state, verify that neither the branch nor worktree path already exists. When creating a worktree, use the recorded base commit, choose a unique persistent path outside the original checkout, create the branch there, and verify all three before editing:
 

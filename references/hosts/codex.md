@@ -1,8 +1,8 @@
 # Codex Host Adapter
 
-This adapter maps the shared Architecture Transform skill to Codex. Claude Code uses the sibling `claude-code.md` adapter; both execute the same strategic and implementation workflow.
+This adapter maps the shared Detangle Codebase skill to Codex. Claude Code uses the sibling `claude-code.md` adapter; both execute the same strategic and implementation workflow.
 
-- Invoke explicitly with `$architecture-transform execute ...` or `$architecture-transform resume ...` when mutations are intended.
+- Invoke explicitly with `$detangle execute ...` or `$detangle resume ...` when mutations are intended.
 - Follow active Codex system, developer, repository, sandbox, approval, branch, and file-editing instructions. They override this adapter.
 - Use Codex's direct subagent mechanism for evidence lanes. Do not create separate user-owned tasks or threads for internal subtasks.
 - When model selection is available, prefer Terra with high reasoning for bounded read-heavy reconnaissance. Keep synthesis, architectural selection, integration, edits, and final acceptance with the root coordinator's strongest available model.

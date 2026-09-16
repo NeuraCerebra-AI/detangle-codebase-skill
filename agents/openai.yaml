@@ -1,4 +1,4 @@
 interface:
-  display_name: "Detangle Skill"
-  short_description: "Review and simplify tangled repository architecture"
-  default_prompt: "Use $architecture-transform in execute mode to review this repository, select a bounded architecture cleanup plan, and implement it within the skill's safety boundaries."
+  display_name: "Detangle Codebase"
+  short_description: "Review-first cleanup for tangled codebases"
+  default_prompt: "Use $detangle to review this tangled repository and recommend a safe architecture cleanup plan."

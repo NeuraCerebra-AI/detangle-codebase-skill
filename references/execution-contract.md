@@ -8,7 +8,7 @@ Use this state machine:
 
 `preflight -> isolated -> investigated -> decision-frozen -> slice-N -> final-review -> completed`
 
-Read this contract during preflight. Create the run record before branch or worktree creation, then checkpoint every transition. Prefer a repository-approved ignored ledger when one exists. Otherwise store a non-secret local run record beneath the repository's Git common directory, in an `architecture-transform/` directory, so it remains outside commits but is reachable from the worktree. Record:
+Read this contract during preflight. Create the run record before branch or worktree creation, then checkpoint every transition. Prefer a repository-approved ignored ledger when one exists. Otherwise store a non-secret local run record beneath the repository's Git common directory, in a `detangle/` directory, so it remains outside commits but is reachable from the worktree. Record:
 
 - run identifier and objective;
 - original checkout and `RUN_ROOT`;

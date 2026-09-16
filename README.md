@@ -1,12 +1,12 @@
 <div align="center">
 
-<img src="assets/architecture-transform-banner.svg" width="100%" alt="Detangle is a review-first architecture cleanup skill that maps a tangled app, names the real owner and canonical path, and requires approval before changes." />
+<img src="assets/detangle-codebase-banner.svg" width="100%" alt="Detangle Codebase is a review-first architecture cleanup skill that maps a tangled app, names the real owner and canonical path, and requires approval before changes." />
 
-# Detangle: review-first architecture cleanup for tangled codebases
+# Detangle Codebase: review-first architecture cleanup for tangled codebases
 
 ### Your app works. But can you safely change it?
 
-Detangle helps turn duplicate paths, unclear ownership, and obsolete files into a codebase you can understand, debug, change, and navigate with confidence.
+Detangle Codebase helps turn duplicate paths, unclear ownership, and obsolete files into a codebase you can understand, debug, change, and navigate with confidence.
 
 **Read-only first. Changes require your approval.**
 
@@ -14,11 +14,11 @@ Detangle helps turn duplicate paths, unclear ownership, and obsolete files into 
 
 ---
 
-> Detangle is a repository-agnostic Codex and Claude Code skill for making a tangled codebase easier to understand, debug, change, and navigate without changing intended behavior. It reviews the whole repository before proposing a selected architecture approach and frozen implementation plan, then changes files only after explicit `execute` or `resume` authorization, a transformation contract, and isolated Git state. It is not a formatter, an automatic code repair tool, a normal small bug-fix workflow, a deployment system, or a replacement for tests and code review.
+> Detangle Codebase is a repository-agnostic Codex and Claude Code skill for making a tangled codebase easier to understand, debug, change, and navigate without changing intended behavior. It reviews the whole repository before proposing a selected architecture approach and frozen implementation plan, then changes files only after explicit `execute` or `resume` authorization, a transformation contract, and isolated Git state. It is not a formatter, an automatic code repair tool, a normal small bug-fix workflow, a deployment system, or a replacement for tests and code review.
 
 ## 🔎 See the difference
 
-Detangle works toward clearer architecture, not merely cleaner files.
+Detangle Codebase works toward clearer architecture, not merely cleaner files.
 
 | Tangled state | Target state |
 | --- | --- |
@@ -27,7 +27,7 @@ Detangle works toward clearer architecture, not merely cleaner files.
 | A bug could belong almost anywhere. | The owner, boundary, and nearby validation give you an obvious place to investigate. |
 | Nobody knows which files are obsolete. | Superseded code, tests, flags, and docs have explicit removal criteria. |
 
-## 🧭 How Detangle works
+## 🧭 How Detangle Codebase works
 
 | Step | What happens | Change authority |
 | --- | --- | --- |
@@ -43,19 +43,19 @@ Clear ownership and one canonical path make it easier for a person to find where
 
 A clearer repository is a better map. When the map is simpler, a coding agent may need less orientation work before a routine debugging or maintenance task. Some of those tasks may then be suitable for lighter, lower-cost Codex or Claude Code models.
 
-That is an inference, not a promise. Detangle does not guarantee cost savings, equal quality across models, or that every task can use a lighter model. It does not replace testing or human code review.
+That is an inference, not a promise. Detangle Codebase does not guarantee cost savings, equal quality across models, or that every task can use a lighter model. It does not replace testing or human code review.
 
 ## 💬 Example request
 
 This is an example of a request, not captured output:
 
 ```text
-$architecture-transform review "My app works, but features and routes are duplicated and I cannot tell which implementation is real. Map the owners and canonical paths, preserve intended behavior, and recommend a safe cleanup plan. Do not modify files."
+$detangle review "My app works, but features and routes are duplicated and I cannot tell which implementation is real. Map the owners and canonical paths, preserve intended behavior, and recommend a safe cleanup plan. Do not modify files."
 ```
 
-The public name is Detangle. The actual invocation remains `$architecture-transform`.
+Invoke Detangle Codebase as `$detangle` in Codex or `/detangle` in Claude Code.
 
-This repository does not document an installation command. Make the skill available through your Codex or Claude Code skill setup before using the request above.
+Installation differs between hosts. Install the skill directory as `detangle` so its directory and invocation name agree, then use the request above.
 
 ## 🚦 Choose a mode
 
@@ -72,7 +72,7 @@ This repository does not document an installation command. Make the skill availa
 - **No hidden recovery:** it never resets, cleans, stashes, rebases, amends, force-pushes, rewrites history, or silently absorbs user changes.
 - **No external authority:** it does not fetch, push, open a pull request, merge, deploy, call live or paid providers, access production or customer data, or claim release readiness.
 
-Detangle is also not a formatter, a normal small bug-fix workflow, an automatic code repair tool, or a deployment system.
+Detangle Codebase is also not a formatter, a normal small bug-fix workflow, an automatic code repair tool, or a deployment system.
 
 ## 🧩 The decision process in detail
 
@@ -110,13 +110,13 @@ The goal is one authoritative architecture for the transformed scope. The goal i
 
 ## 🧱 Detailed workflow
 
-<img src="assets/architecture-transform-flow.svg" width="100%" alt="The detailed Detangle workflow gathers four evidence lanes, compares five architecture approaches and five implementation plans when defensible, challenges the leading plan, and permits local execution only after the contract and isolation gate." />
+<img src="assets/detangle-codebase-flow.svg" width="100%" alt="The detailed Detangle Codebase workflow gathers four evidence lanes, compares five architecture approaches and five implementation plans when defensible, challenges the leading plan, and permits local execution only after the contract and isolation gate." />
 
 The detailed diagram shows the complete decision and execution path. The [skill definition](SKILL.md), [strategic decision protocol](references/strategic-decision.md), and [execution contract](references/execution-contract.md) remain the source of truth.
 
 ## 🔄 How it differs from adjacent tools
 
-| Tool | Its primary lane | Detangle's lane |
+| Tool | Its primary lane | Detangle Codebase's lane |
 | --- | --- | --- |
 | [OpenRewrite](https://docs.openrewrite.org/) | Automated refactoring recipes and source transformations. | Selects and governs a whole-repository cleanup before changes. It may inform a plan, but this repository does not claim an integration. |
 | [Codemod](https://docs.codemod.com/introduction) | Large-scale maintenance campaigns and reusable code transformations. | Uses a bounded local decision and execution workflow. It does not claim hosted orchestration, codemod generation, or a registry. |
@@ -127,25 +127,25 @@ The detailed diagram shows the complete decision and execution path. The [skill 
 
 Technical debt is broader than code style. DORA's 2019 report includes poor design, obsolete artifacts, incomplete migrations, outdated technology, and stale documentation in its examples. In its respondent model, people reporting high technical debt were 1.6 times less productive. That is an observed association in the report, not a prediction for any repository. [DORA, 2019](https://dora.dev/research/2019/dora-report/2019-dora-accelerate-state-of-devops-report.pdf)
 
-A Google panel-data study of developers at Google found code quality and technical debt causally linked to perceived developer productivity in the studied population. The authors also found that increases in perceived code quality tended to precede increases in productivity. The result does not establish what Detangle will do in another repository. [Cheng et al., 2022](https://research.google/pubs/what-improves-developer-productivity-at-google-code-quality/)
+A Google panel-data study of developers at Google found code quality and technical debt causally linked to perceived developer productivity in the studied population. The authors also found that increases in perceived code quality tended to precede increases in productivity. The result does not establish what Detangle Codebase will do in another repository. [Cheng et al., 2022](https://research.google/pubs/what-improves-developer-productivity-at-google-code-quality/)
 
-Google SRE's guidance says a smaller project is easier to understand and test, and frequently has fewer defects. Detangle treats subtraction as useful only when obsolete machinery can be removed without breaking intended behavior. [Google SRE, 2016](https://sre.google/sre-book/simplicity/)
+Google SRE's guidance says a smaller project is easier to understand and test, and frequently has fewer defects. Detangle Codebase treats subtraction as useful only when obsolete machinery can be removed without breaking intended behavior. [Google SRE, 2016](https://sre.google/sre-book/simplicity/)
 
 ## ❓ FAQ
 
-**How do I clean up a codebase when I do not know which implementation is real?** Start with `$architecture-transform review`. It maps competing owners and paths, identifies evidence for the canonical implementation, and recommends a frozen plan without editing files.
+**How do I clean up a codebase when I do not know which implementation is real?** Start with `$detangle review`. It maps competing owners and paths, identifies evidence for the canonical implementation, and recommends a frozen plan without editing files.
 
 **Can Codex or Claude Code review my repository without changing it?** Yes. `review` is read-only, and every ambiguous invocation is treated as `review`. File or Git changes require explicit `execute` or `resume` authorization.
 
-**Is Detangle only for vibe-coded apps?** No. Vibe-coded apps are one common case because rapid AI-assisted changes can leave duplicate paths and uncertain ownership. The skill is repository-agnostic and applies when any codebase has whole-repository architecture problems.
+**Is Detangle Codebase only for vibe-coded apps?** No. Vibe-coded apps are one common case because rapid AI-assisted changes can leave duplicate paths and uncertain ownership. The skill is repository-agnostic and applies when any codebase has whole-repository architecture problems.
 
-**Will Detangle automatically fix my code?** No. Detangle is not an automatic code repair tool. It reviews first, selects an architecture approach, freezes an implementation plan, and changes files only within explicit execution authority.
+**Will Detangle Codebase automatically fix my code?** No. Detangle Codebase is not an automatic code repair tool. It reviews first, selects an architecture approach, freezes an implementation plan, and changes files only within explicit execution authority.
 
-**Can Detangle guarantee that a cheaper model will handle future work?** No. Clearer ownership and fewer competing paths may reduce orientation work, but model suitability still depends on the task, language, risk, context, and validation available.
+**Can Detangle Codebase guarantee that a cheaper model will handle future work?** No. Clearer ownership and fewer competing paths may reduce orientation work, but model suitability still depends on the task, language, risk, context, and validation available.
 
-**Does Detangle replace tests or code review?** No. Tests and human review remain necessary. The workflow uses validation evidence to support changes, not to bypass review.
+**Does Detangle Codebase replace tests or code review?** No. Tests and human review remain necessary. The workflow uses validation evidence to support changes, not to bypass review.
 
-**Does Detangle integrate with OpenRewrite, Codemod, ast-grep, or ArchUnit?** It can account for tools a repository already uses, but this repository does not claim a direct integration with them.
+**Does Detangle Codebase integrate with OpenRewrite, Codemod, ast-grep, or ArchUnit?** It can account for tools a repository already uses, but this repository does not claim a direct integration with them.
 
 ## 📖 Read the source instructions
 

@@ -1,5 +1,5 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 860" role="img" aria-labelledby="title desc">
-  <title id="title">Architecture Transform Skill review-to-execution story</title>
+  <title id="title">Detangle Codebase review-to-execution story</title>
   <desc id="desc">Four steps show a tangled repository entering read-only evidence review, qualified architecture and implementation choices, adversarial challenge with feedback, a frozen decision, and an explicit contract and isolated Git gate before root-only local execution creates a coherent architecture with one canonical path.</desc>
   <style>
     .sans { font-family: -apple-system, BlinkMacSystemFont, &quot;Segoe UI&quot;, Helvetica, Arial, sans-serif; }
