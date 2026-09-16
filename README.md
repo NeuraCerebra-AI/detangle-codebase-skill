@@ -1,6 +1,8 @@
-<div align="center">
+<p align="center">
+  <img src="assets/detangle-codebase-banner.svg" alt="Detangle Codebase is a review-first architecture cleanup skill that maps a tangled app, names the real owner and canonical path, and requires approval before changes." />
+</p>
 
-<img src="assets/detangle-codebase-banner.svg" width="100%" alt="Detangle Codebase is a review-first architecture cleanup skill that maps a tangled app, names the real owner and canonical path, and requires approval before changes." />
+<div align="center">
 
 # Detangle Codebase Skill: review-first architecture cleanup for tangled codebases
 
@@ -110,7 +112,9 @@ The goal is one authoritative architecture for the transformed scope. The goal i
 
 ## 🧱 Detailed workflow
 
-<img src="assets/detangle-codebase-flow.svg" width="100%" alt="The detailed Detangle Codebase workflow gathers four evidence lanes, compares five architecture approaches and five implementation plans when defensible, challenges the leading plan, and permits local execution only after the contract and isolation gate." />
+<p align="center">
+  <img src="assets/detangle-codebase-flow.svg" alt="The detailed Detangle Codebase workflow gathers four evidence lanes, compares five architecture approaches and five implementation plans when defensible, challenges the leading plan, and permits local execution only after the contract and isolation gate." />
+</p>
 
 The detailed diagram shows the complete decision and execution path. The [skill definition](SKILL.md), [strategic decision protocol](references/strategic-decision.md), and [execution contract](references/execution-contract.md) remain the source of truth.
 
